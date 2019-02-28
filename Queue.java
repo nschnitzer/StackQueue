@@ -1,13 +1,15 @@
 
 public class Queue<Type> 
 {
-	Node2<Type> first = null;
-	Node2<Type> lastAdded = null;
+	Node2<Type> first;
+	Node2<Type> lastAdded;
 	private int size;
 	
 	public Queue()
 	{
 		size = 0;
+		first = null;
+		lastAdded = null;
 	}
 	
 	public void push(Type obj)

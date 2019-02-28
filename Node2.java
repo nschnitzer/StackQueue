@@ -10,6 +10,12 @@ public class Node2<Type>
 	private Node2<Type> next;
 	private Type value;
 	
+	public Node2()
+	{
+		next = null;
+		value = null;
+	}
+	
 	public Node2(Node2<Type> nextNode, Type val)
 	{
 		next = nextNode;
