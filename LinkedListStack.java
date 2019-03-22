@@ -1,10 +1,10 @@
 
-public class Stack<Type> 
+public class LinkedListStack<Type> 
 {
 	Node<Type> last = null;
 	private int size;
 	
-	public Stack()
+	public LinkedListStack()
 	{
 		size = 0;
 	}

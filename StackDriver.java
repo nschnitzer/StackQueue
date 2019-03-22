@@ -8,7 +8,7 @@ public class StackDriver
 {
 	public static void main(String[] args) 
 	{
-		Stack<Integer> stk = new Stack<Integer>();
+		LinkedListStack<Integer> stk = new LinkedListStack<Integer>();
 		stk.push(new Integer(5));
 		stk.push(new Integer(7));
 		stk.printStack();

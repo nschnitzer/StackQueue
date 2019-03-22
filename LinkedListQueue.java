@@ -1,18 +1,18 @@
 
-public class Queue<Type> 
+public class LinkedListQueue<Type> 
 {
 	Node2<Type> first;
 	Node2<Type> lastAdded;
 	private int size;
 	
-	public Queue()
+	public LinkedListQueue()
 	{
 		size = 0;
 		first = null;
 		lastAdded = null;
 	}
 	
-	public void push(Type obj)
+	public void enqueue(Type obj)
 	{
 		if (size == 0)
 		{
@@ -27,7 +27,7 @@ public class Queue<Type>
 		size++;
 	}
 	
-	public Type pop()
+	public Type dequeue()
 	{
 		Type type = first.getValue();
 		first = first.getNextNode();
